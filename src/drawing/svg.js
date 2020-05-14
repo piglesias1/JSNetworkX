@@ -759,7 +759,8 @@ function updateEdgeAttr(selection, config, optEdges, optDirected) {
   if (config.withEdgeLabels) {
     selection.selectAll('text')
       .attr(config.edgeLabelAttr)
-      .style(config.edgeLabelStyle);
+      .style(config.edgeLabelStyle)
+      .text(config.edgeLabels);
   }
 }
 
